@@ -9,22 +9,24 @@ type CounerPropsType = {
 }
 
 const Counter = memo(({ counter, increment, decrement }: CounerPropsType) => (
-  <div data-testid="counter-element" className={style.grid} >
+  <div data-testid="counter-element" className={style.container} >
     <b>{counter.value}</b>
-    <div>
+    <div  className={style.actions}>
       <button
         onClick={() => {
           increment(counter.id)
         }}
+        className={`${style.btn} ${style.increment}`}
       >
-        +
+        ＋
       </button>
       <button
         onClick={() => {
           decrement(counter.id)
         }}
+        className={`${style.btn} ${style.decrement}`}
       >
-        -
+        －
       </button>
     </div>
   </div>

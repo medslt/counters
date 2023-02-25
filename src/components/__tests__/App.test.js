@@ -15,8 +15,8 @@ test("Stage1: should show all counters with increment and decrement Features", (
 
   counterBlocks.forEach((counterBlock) => {
     let expectedCounterValue = 0
-    const increment = within(counterBlock).getByRole('button', {name: /\+/i})
-    const decrement = within(counterBlock).getByRole('button', {name: /-/i})
+    const increment = within(counterBlock).getByRole('button', {name: /\＋/i})
+    const decrement = within(counterBlock).getByRole('button', {name: /－/i})
   
     // increment counter 3 times than decrment it once (1+1+1-1 = 2)
     userEvent.click(increment)
@@ -45,8 +45,8 @@ test("should show and update total count when counters are changed", () => {
   const counterBlocks = screen.getAllByTestId('counter-element')
 
   counterBlocks.forEach((counterBlock) => {
-    const increment = within(counterBlock).getByRole('button', {name: /\+/i})
-    const decrement = within(counterBlock).getByRole('button', {name: /-/i})
+    const increment = within(counterBlock).getByRole('button', {name: /\＋/i})
+    const decrement = within(counterBlock).getByRole('button', {name: /－/i})
     
     userEvent.click(increment)
     expectedTotalCounterValue++

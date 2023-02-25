@@ -2,6 +2,7 @@ import { useCallback, useReducer } from "react"
 import Counter from "./Counter"
 import { CounterType, ActionKind, ActionType } from "../types"
 import { data } from "../data"
+import style from "./App.module.css"
 
 const counterReducer = (
   state: CounterType[],
@@ -48,8 +49,11 @@ const App = () => {
   const total = counters.reduce((accu, counter) => accu + counter.value, 0)
 
   return (
-    <div>
-      <div>
+    <div className={style.main}>
+      <div className={style.head}>
+        Counters Challenge
+      </div>
+      <div className={style.counters}>
         {counters.map((counter) => (
           <Counter
             key={counter.id}
@@ -59,7 +63,7 @@ const App = () => {
           />
         ))}
       </div>
-      <div>Total count: {total}</div>
+      <div className={style.total}>Total count: {total}</div>
     </div>
   )
 }

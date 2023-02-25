@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 200px;
+    border-right: black solid 3px;
+    gap: 20px;
+    font-size: 40px;
+ }
+
+ .btn{
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+ }
+
+ .increment{
+    background-color: #4caf50;
+ }
+
+ .decrement{
+    background-color:#f50057;
+ }
+
+ .actions{
+    display: flex;
+    gap: 5px;
+ }

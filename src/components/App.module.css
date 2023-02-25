@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.counters {
+    display: flex;
+    border-left: black solid  3px;
+ }  
+
+ .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    border: #46515a solid 3px;
+    color: white;
+    background-color: #25a496; 
+    height: 100px;
+    font-size: 50px;
+ }
+
+ .total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46515a;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    border-radius: 0 0 20px 20px;
+ }
