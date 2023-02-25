@@ -32,4 +32,36 @@ test("Stage1: should show all counters with increment and decrement Features", (
   })
 });
 
+test("should show default Total count text", () => {
+  render(<App />);
+  
+  expect(screen.getByText(/total count/i)).toBeInTheDocument()
+});
 
+test("should show and update total count when counters are changed", () => {
+  render(<App />);
+  let expectedTotalCounterValue = 0
+  
+  const counterBlocks = screen.getAllByTestId('counter-element')
+
+  counterBlocks.forEach((counterBlock) => {
+    const increment = within(counterBlock).getByRole('button', {name: /\+/i})
+    const decrement = within(counterBlock).getByRole('button', {name: /-/i})
+    
+    userEvent.click(increment)
+    expectedTotalCounterValue++
+    
+    userEvent.click(increment)
+    expectedTotalCounterValue++
+
+    userEvent.click(increment)
+    expectedTotalCounterValue++
+
+    userEvent.click(decrement)
+    expectedTotalCounterValue--
+  })
+  
+  const totalCountMessage = screen.getByText(/total count/i)
+
+  expect(totalCountMessage).toHaveTextContent('Total count: ' + expectedTotalCounterValue)
+});
