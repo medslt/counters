@@ -50,7 +50,7 @@ test("should show and update total count when counters are changed", () => {
     
     userEvent.click(increment)
     expectedTotalCounterValue++
-    
+
     userEvent.click(increment)
     expectedTotalCounterValue++
 

@@ -1,7 +1,7 @@
 import { useCallback, useReducer } from "react"
 import Counter from "./Counter"
-import { CounterType, ActionKind, ActionType } from "./types"
-import { data } from "./data"
+import { CounterType, ActionKind, ActionType } from "../types"
+import { data } from "../data"
 
 const counterReducer = (
   state: CounterType[],

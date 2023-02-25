@@ -1,5 +1,6 @@
 import { memo } from "react"
-import { CounterType } from "./types"
+import { CounterType } from "../types"
+import style from "./Counter.module.css"
 
 type CounerPropsType = {
   counter: CounterType
@@ -8,7 +9,7 @@ type CounerPropsType = {
 }
 
 const Counter = memo(({ counter, increment, decrement }: CounerPropsType) => (
-  <div data-testid="counter-element">
+  <div data-testid="counter-element" className={style.grid} >
     <b>{counter.value}</b>
     <div>
       <button
