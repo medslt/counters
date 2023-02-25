@@ -26,6 +26,7 @@ const counterReducer = (
         ...counterToUpdate,
         value: counterToUpdate.value - 1
       }
+
       return newState
 
     default:
@@ -44,6 +45,7 @@ const App = () => {
     dispatch({ type: ActionKind.DECREMENT, payload: { id } })
   }, [])
 
+  const total = counters.reduce((accu, counter) => accu + counter.value, 0)
 
   return (
     <div>
@@ -57,6 +59,7 @@ const App = () => {
           />
         ))}
       </div>
+      <div>Total count: {total}</div>
     </div>
   )
 }
