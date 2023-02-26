@@ -19,8 +19,8 @@
     border: #46515a solid 3px;
     color: white;
     background-color: #25a496; 
-    height: 100px;
-    font-size: 50px;
+    height: 170px;
+    font-size: 70px;
  }
 
  .total {
@@ -28,8 +28,8 @@
     justify-content: center;
     align-items: center;
     background-color: #46515a;
-    height: 70px;
+    height: 100px;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 0 0 20px 20px;
  }

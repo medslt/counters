@@ -51,7 +51,7 @@ const App = () => {
   return (
     <div className={style.main}>
       <div className={style.head}>
-        Counters Challenge
+        Counters challenge
       </div>
       <div className={style.counters}>
         {counters.map((counter) => (
