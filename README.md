@@ -1,5 +1,5 @@
 # App Counter
-Technical task for a job interview  for more details see https://github.com/medslt/counters/blob/main/spec.md
+Technical task for a job interview. For more details see https://github.com/medslt/counters/blob/main/spec.md
 
 ## Setup
 Run `npm install`, then run `npm start` to start the application and `npm test` to run the tests.
@@ -14,8 +14,8 @@ Run `npm install`, then run `npm start` to start the application and `npm test` 
 ## Code architecture
 
 ***`src/components/App.tsx`*** The start of the application and contains all the logic  
-***`src/components/Counter.tsx`*** a component to display on counter 
+***`src/components/Counter.tsx`*** a component to display a counter 
 
-***`src/types.ts`***  contains types used in the app
+***`src/types.ts`*** contains types used in the app
 
 ***`src/data.ts`*** contains the counter list data 
