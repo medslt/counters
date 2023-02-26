@@ -1,5 +1,5 @@
 # App Counter
-Technical task for job interview  for more details see https://github.com/medslt/counters/blob/main/spec.md
+Technical task for a job interview  for more details see https://github.com/medslt/counters/blob/main/spec.md
 
 ## Setup
 Run `npm install`, then run `npm start` to start the application and `npm test` to run the tests.
